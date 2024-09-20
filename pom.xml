@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Cow_Monitor</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- GStreamer Java Bindings -->
+        <dependency>
+            <groupId>org.freedesktop.gstreamer</groupId>
+            <artifactId>gstreamer-java</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+        <!-- OpenCV Bindings for Java -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv-platform</artifactId>
+            <version>4.5.3-1.5.7</version>
+        </dependency>
+
+        <!-- javax.usb for USB Sensor Interaction -->
+        <dependency>
+            <groupId>javax.usb</groupId>
+            <artifactId>javax.usb-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- SLF4J for logging (required by GStreamer) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>gstreamer-java-repository</id>
+            <url>https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-java/html/repo/</url>
+        </repository>
+    </repositories>
+</project>
