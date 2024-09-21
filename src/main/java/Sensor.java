@@ -7,4 +7,8 @@ public class Sensor {
         // Aqui sera implementado a leitura real do sensor RFID via USB
         return "ID_VACA_001";  // Simulando o retorno de um ID
     }
+
+    public String obterECC() {
+        return "4";
+    }
 }
